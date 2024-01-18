@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Valters Kalnins vk23053
+-->
+<html lang="en">
+    <head>
+        <title>Typer Acer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="texts.js"></script>
+        <script src="pa.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+		<h1 class="center-this colour-first-letter" id="main-title">Typer Acer</h1>
+		
+		<img src="images/devil_typing.jpg" id="logo" alt="devil-typing">
+		<div id="side-by-side">
+			<div class="side-element">
+				<h3>The benefits of being able to type fast</h3>
+				<ul>
+					<li>Save time</li>
+					<li>Be more productive</li>
+					<li>Improve your posture</li>
+					<li>Improve your focus</li>
+					<li>Better accuracy</li>
+					<li>More opportunities</li>
+				</ul>
+				<a href="https://touchtypeit.co.uk/the-many-benefits-of-learning-how-to-type-fast">Read more</a>
+				
+				<br>
+				<h3><strong>The verity yet unveiled</strong></h3>
+				<ol>
+					<li>
+						<p>With fingers <i>deft</i> as <i>quill</i> on <i>vellum</i>, the nimble typist <i>weaves</i> swift <i>prose</i> in the digital <i>scriptorium</i>, imprinting an ethereal <i>tapestry</i> of characters.</p>
+					</li>
+					<li>
+						<p>In the nimble ballet of fingers, <i>akin</i> to the <i>quill's</i> grace upon <i>parchment</i>, the <i>adept</i> typist, with rapid keystrokes, <i>sculpts</i> <i>prose</i> that leaves an otherworldly trace upon the digital <i>scriptorium</i>, like whispers from a celestial <i>quire</i>.</p>
+					</li>
+				</ol>
+				
+				<button type="button" id="like-typing" class="widen-it bigger">Do you like typing?</button>
+				
+				<div id="liked-list"></div>
+				
+			</div>
+			
+			
+			<div class="side-element">
+				<label> Choose text: </label>
+				<select id="text-select" class="bigger"></select>
+				<br><br><br>
+				<span id="text" class="non-copyable"></span>
+				<br><br><br>
+				<input type="text" id="text-input" class="bigger">
+				<br><br><br>
+				<div id="victory-text" class="finish">You typed the text! Your WPM: <span id="wpm">69</span></div>
+			
+				<br>
+				
+				<form action="https://www.w3schools.com/action_page.php" method="post" class="finish" onsubmit="return validateForm()" target="_blank">
+					<label>Do you want to submit your score? </label>
+					<br><!-- action="https://www.w3schools.com/action_page.php" -->
+					<label for="nickname">Nickname:</label>
+					<input type="text" id="nickname" placeholder="Nickname" name="nickname" class="bigger">
+					<br>
+					<label for="score">WPM:</label>
+					<input type="text" id="score" name="score" readonly class="bigger">
+					<br>
+					<label for="chosen-text">Chosen text:</label>
+					<input type="text" id="chosen-text" name="chosen-text" readonly class="bigger">
+					<br>
+					<label for="birth-year">Birth year:</label>
+					<input type="text" id="birth-year" name="birth-year" placeholder="Birth year" class="bigger">
+					<br>
+					<input type="submit" value="Submit" class="bigger">
+				</form>
+			</div>
+			
+			<div class="side-element">
+				<span id="reference"></span>
+			</div>
+		</div>
+    </body>
+</html>

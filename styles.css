@@ -25,6 +25,7 @@ a:hover {
   color: blue;
 }
 #logo {
+	float: right;
 	position: absolute;
 	top: 0;
 	right: 0;
